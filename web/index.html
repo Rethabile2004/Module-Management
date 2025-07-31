@@ -1,0 +1,67 @@
+<!--
+//
+// Coder                    : Rethabile Eric Siase
+// Purpose                  : Integrated fiebase storage for managing(adding, removing and updating) modules  
+//
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="firebase_flutter">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>firebase_flutter</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCYaUm5kp-BllUflUCnOV_nQvt2__-T10w",
+      authDomain: "fir-flutter-e4d02.firebaseapp.com",
+      projectId: "fir-flutter-e4d02",
+      storageBucket: "fir-flutter-e4d02.firebasestorage.app",
+      messagingSenderId: "75055232362",
+      appId: "1:75055232362:web:58f8b4774047c1e59e6113",
+      measurementId: "G-M4VF9ECC9Z"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
